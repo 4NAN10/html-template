@@ -34,3 +34,4 @@ Thumbs.db
 *.tmp
 # Vagrant specific
 .vagrant/
+settings.json
