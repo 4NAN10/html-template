@@ -29,47 +29,4 @@ $(function(){
 			return false;
 		}
 	});
-
-
-
-	/* ===================================
-	 FOR PAGES
-	===================================  */
-	/*
-	 dl class="illustCol" 
-	 imgがある場合のみ、スタイル適用
-	*/
-	$(function(){
-		$("dl.illustCol > dt:has(img)").addClass("hasImg");
-	});
-
-	/*
-	 FAQ Toggle
-	*/
-	$("dl.faq > dt").click(function(){
-		$( this ).next("dd").slideToggle();
-		return false;
-	});
-
-	/*
-	 FADEIN ANIMATION
-	*/
-	$(window).scroll(function (){
-		$('.effect-fade').each(function(){
-				var elemPos = $(this).offset().top;
-				var scroll = $(window).scrollTop();
-				var windowHeight = $(window).height();
-				if (scroll > elemPos - windowHeight + 100){
-				$(this).addClass('effect-scroll');
-			}
-		});
-	});
-
-
-
-
-
-
-
-
 });
